@@ -39,7 +39,7 @@ gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 # Use Capistrano for deployment
 # gem "capistrano-rails", group: :development
 gem 'unicorn'
-
+gem 'passenger'
 group :development do
   gem 'capistrano'
   gem 'rvm1-capistrano3', require: false
