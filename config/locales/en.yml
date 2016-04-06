@@ -1,0 +1,126 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  project_name: "Fels_62"
+  menu_home: "Home"
+  menu_help: "Help"
+  menu_about: "About"
+  menu_login: "Login"
+  menu_logout: "Sign Out"
+  menu_sign_up: "Sign Up"
+  confirm: "Are you sure to delete this item?"
+  user: 
+    sign_up: "Sign Up"
+    login: "Log In"
+  categories:  
+    start: "Start"
+  lesson:
+    next: "Next"
+  message: 
+    success: "Congratulation! You have finished your lesson"
+    error: "Invalid! Please try again"
+  home:
+    word: "Word"
+    lesson: "Lesson"
+    edit: "Edit Profile"
+    learn: "Learned"
+    word_in_lesson: "word in Lesson"
+    activities: "Activities"
+    home_page: "Home Page"
+    name: "Name"
+    no_name: "No Name"
+  edit_profile:
+    edit_profile: "Edit Profile"
+    email: "Email"
+    leave: "Leave blank if you don't want to change password"
+    update: "Update"
+    enter_email: "Enter Email"
+    enter_name: "Enter Name"
+    password: "Password"
+    password_confirm: "Password Confirm"
+  lesson_words:
+    title: "Word"
+    answer: "Answer"
+    no_data: "No Data"
+  dashbroad:
+    categories: "Categories"
+    word: "Word"
+    answer: "Answer"
+  admin_categories:
+    title: "Title"
+    description: "Descripton"
+    content: "Content"
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    new: "New"
+    create_categories: "Create Categories"
+    close: "Close"
+    save: "Save"
+    p_title: "Enter title"
+    p_description: "Enter description"
+    p_content: "Enter content"
+    categories_information: "Categories Information"
+    edit_categories: "Edit Categories"
+    update_success: "Category update successfully"
+    update_failed: "Category update faild"
+    delete_success: "Category delete successfully"
+    delete_failed: "Category delete faild"
+    create_success: "Category create successfully"
+    create_failed: "Category create faild"
+  admin_words:
+    content: "Content"
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    new: "New"
+    create_word: "Create Word"
+    close: "Close"
+    save: "Save"
+    p_content: "Enter content"
+    words_information: "Word Information"
+    edit_words: "Edit Word"
+    category: "Select category"
+    update_success: "words update successfully"
+    update_failed: "words update faild"
+    delete_success: "words delete successfully"
+    delete_failed: "words delete faild"
+    create_success: "words create successfully"
+    create_failed: "words create faild"
+    is_true: "Is True"
+  admin_answers:
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    new: "New"
+    create_answer: "Create answer"
+    close: "Close"
+    save: "Save"
+    p_content: "Enter content"
+    edit_answers: "Edit answer"
+    word: "Select word"
+    content: "Answer"
+    answer: "Answer"
+  words:
+    word_title: "Word Lists"
+    filter: "Filter"
