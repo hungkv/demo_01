@@ -1,0 +1,781 @@
+<?xml version='1.0'?>
+<checkstyle>
+  <file name='Gemfile'>
+    <error line='3' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='5' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='5' column='13' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='7' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='9' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='9' column='18' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='16' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='13' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='13' column='20' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='16' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='18' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='20' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='22' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='22' column='16' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='24' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='24' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='26' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='27' column='0' severity='info' message='Missing space after #.' source='com.puppycrawl.tools.checkstyle.Style/LeadingCommentSpace'/>
+    <error line='28' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='28' column='21' severity='info' message='Unnecessary spacing detected.' source='com.puppycrawl.tools.checkstyle.Style/ExtraSpacing'/>
+    <error line='28' column='23' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='30' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='30' column='21' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='32' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='32' column='22' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='53' column='80' severity='info' message='Line is too long. [83/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='54' column='6' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='56' column='6' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='56' column='21' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='57' column='6' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='59' column='6' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='59' column='21' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='60' column='6' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='61' column='80' severity='info' message='Line is too long. [130/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='62' column='6' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='Rakefile'>
+    <error line='2' column='80' severity='info' message='Line is too long. [90/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config.ru'/>
+  <file name='Capfile'>
+    <error line='23' column='0' severity='info' message='Missing space after #.' source='com.puppycrawl.tools.checkstyle.Style/LeadingCommentSpace'/>
+  </file>
+  <file name='db/schema.rb'>
+    <error line='4' column='80' severity='info' message='Line is too long. [81/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='9' column='80' severity='info' message='Line is too long. [86/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='12' column='80' severity='info' message='Line is too long. [86/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='14' column='37' severity='info' message='Separate every 3 digits in the integer portion of a number with underscores(_).' source='com.puppycrawl.tools.checkstyle.Style/NumericLiterals'/>
+    <error line='15' column='0' severity='info' message='Extra empty line detected at block body beginning.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+    <error line='16' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='17' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='17' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='17' column='25' severity='info' message='Unnecessary spacing detected.' source='com.puppycrawl.tools.checkstyle.Style/ExtraSpacing'/>
+    <error line='18' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='18' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='19' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='20' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='21' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='21' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='24' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='25' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='25' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='25' column='23' severity='info' message='Unnecessary spacing detected.' source='com.puppycrawl.tools.checkstyle.Style/ExtraSpacing'/>
+    <error line='26' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='26' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='27' column='10' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='27' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='28' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='29' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='32' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='33' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='33' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='34' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='34' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='35' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='36' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='39' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='40' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='40' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='41' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='41' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='42' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='42' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='43' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='44' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='47' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='47' column='29' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='47' column='49' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='47' column='80' severity='info' message='Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='48' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='48' column='29' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='48' column='49' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='48' column='80' severity='info' message='Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='49' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='49' column='29' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='49' column='47' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='51' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='52' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='52' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='53' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='53' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='54' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='55' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='58' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='59' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='60' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='61' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='61' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='61' column='50' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='62' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='62' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='62' column='50' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='63' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='63' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='64' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='65' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='66' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='66' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='66' column='31' severity='info' message='Unnecessary spacing detected.' source='com.puppycrawl.tools.checkstyle.Style/ExtraSpacing'/>
+    <error line='66' column='52' severity='info' message='Unnecessary spacing detected.' source='com.puppycrawl.tools.checkstyle.Style/ExtraSpacing'/>
+    <error line='67' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='68' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='69' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='69' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='70' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='70' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='71' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='71' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='72' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='72' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='73' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='73' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='74' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='75' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='75' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='78' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='78' column='22' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='78' column='38' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='79' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='79' column='22' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='79' column='53' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='79' column='80' severity='info' message='Line is too long. [104/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='81' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='82' column='13' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='82' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='83' column='12' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='83' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='84' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='85' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='87' column='0' severity='info' message='Extra empty line detected at block body end.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+  </file>
+  <file name='db/migrate/20150617031225_create_answers.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='4' column='0' severity='info' message='Extra empty line detected at block body beginning.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+    <error line='5' column='4' severity='info' message='Use 2 (not 1) spaces for indentation.' source='com.puppycrawl.tools.checkstyle.Style/IndentationWidth'/>
+    <error line='5' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='6' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='7' column='6' severity='info' message='Inconsistent indentation detected.' source='com.puppycrawl.tools.checkstyle.Style/IndentationConsistency'/>
+  </file>
+  <file name='db/migrate/20150618010050_add_avatar_to_user.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+  </file>
+  <file name='db/migrate/20150618011136_add_name_to_user.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+  </file>
+  <file name='db/migrate/20150617031036_create_words.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='4' column='0' severity='info' message='Extra empty line detected at block body beginning.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+    <error line='5' column='4' severity='info' message='Use 2 (not 1) spaces for indentation.' source='com.puppycrawl.tools.checkstyle.Style/IndentationWidth'/>
+    <error line='5' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='6' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='7' column='6' severity='info' message='Inconsistent indentation detected.' source='com.puppycrawl.tools.checkstyle.Style/IndentationConsistency'/>
+  </file>
+  <file name='db/migrate/20150617060217_create_follows.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='4' column='0' severity='info' message='Extra empty line detected at block body beginning.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+    <error line='5' column='4' severity='info' message='Use 2 (not 1) spaces for indentation.' source='com.puppycrawl.tools.checkstyle.Style/IndentationWidth'/>
+    <error line='5' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='6' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='7' column='6' severity='info' message='Inconsistent indentation detected.' source='com.puppycrawl.tools.checkstyle.Style/IndentationConsistency'/>
+  </file>
+  <file name='db/migrate/20150617030739_create_categories.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='4' column='0' severity='info' message='Extra empty line detected at block body beginning.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+    <error line='5' column='4' severity='info' message='Use 2 (not 1) spaces for indentation.' source='com.puppycrawl.tools.checkstyle.Style/IndentationWidth'/>
+    <error line='5' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='6' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='7' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='8' column='6' severity='info' message='Inconsistent indentation detected.' source='com.puppycrawl.tools.checkstyle.Style/IndentationConsistency'/>
+  </file>
+  <file name='db/migrate/20150622044216_add_colunm_content_to_answers.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+  </file>
+  <file name='db/migrate/20150617031349_create_lessons.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='4' column='0' severity='info' message='Extra empty line detected at block body beginning.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+    <error line='5' column='4' severity='info' message='Use 2 (not 1) spaces for indentation.' source='com.puppycrawl.tools.checkstyle.Style/IndentationWidth'/>
+    <error line='5' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='6' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='7' column='6' severity='info' message='Inconsistent indentation detected.' source='com.puppycrawl.tools.checkstyle.Style/IndentationConsistency'/>
+  </file>
+  <file name='db/migrate/20150617065155_add_devise_to_users.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='2' column='2' severity='info' message='Method has too many lines. [14/10]' source='com.puppycrawl.tools.checkstyle.Metrics/MethodLength'/>
+    <error line='5' column='58' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='6' column='58' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='9' column='14' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='16' column='15' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='19' column='14' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='20' column='14' severity='info' message='Put one space between the method name and the first argument.' source='com.puppycrawl.tools.checkstyle.Style/SingleSpaceBeforeFirstArg'/>
+    <error line='29' column='80' severity='info' message='Line is too long. [104/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='33' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='45' column='80' severity='info' message='Line is too long. [99/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='46' column='80' severity='info' message='Line is too long. [103/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='47' column='4' severity='info' message='Use `fail` instead of `raise` to signal exceptions.' source='com.puppycrawl.tools.checkstyle.Style/SignalException'/>
+  </file>
+  <file name='db/migrate/20150617031506_create_lesson_words.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='4' column='0' severity='info' message='Extra empty line detected at block body beginning.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+    <error line='5' column='4' severity='info' message='Use 2 (not 1) spaces for indentation.' source='com.puppycrawl.tools.checkstyle.Style/IndentationWidth'/>
+    <error line='5' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='6' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='7' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='8' column='6' severity='info' message='Inconsistent indentation detected.' source='com.puppycrawl.tools.checkstyle.Style/IndentationConsistency'/>
+    <error line='11' column='3' severity='info' message='Final newline missing.' source='com.puppycrawl.tools.checkstyle.Style/TrailingBlankLines'/>
+  </file>
+  <file name='db/migrate/20150617031722_create_users.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='4' column='0' severity='info' message='Extra empty line detected at block body beginning.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+  </file>
+  <file name='db/seeds.rb'>
+    <error line='1' column='80' severity='info' message='Line is too long. [103/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='2' column='80' severity='info' message='Line is too long. [96/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='8' column='0' severity='info' message='2 trailing blank lines detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingBlankLines'/>
+  </file>
+  <file name='app/helpers/application_helper.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level module documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='2' column='28' severity='info' message='Use def with parentheses when there are parameters.' source='com.puppycrawl.tools.checkstyle.Style/MethodDefParentheses'/>
+    <error line='3' column='62' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='3' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='6' column='25' severity='info' message='Use def with parentheses when there are parameters.' source='com.puppycrawl.tools.checkstyle.Style/MethodDefParentheses'/>
+    <error line='8' column='80' severity='info' message='Line is too long. [99/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='9' column='44' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='18' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='12' column='80' severity='info' message='Line is too long. [97/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='app/models/lesson.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='12' column='24' severity='info' message='Space missing to the left of {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceBeforeBlockBraces'/>
+    <error line='12' column='25' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='12' column='62' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='12' column='80' severity='info' message='Line is too long. [99/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='12' column='98' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='13' column='0' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='15' column='7' severity='info' message='Redundant `self` detected.' source='com.puppycrawl.tools.checkstyle.Style/RedundantSelf'/>
+    <error line='15' column='45' severity='info' message='Redundant `self` detected.' source='com.puppycrawl.tools.checkstyle.Style/RedundantSelf'/>
+    <error line='18' column='2' severity='info' message='Keep a blank line before and after `private`.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundAccessModifier'/>
+    <error line='20' column='29' severity='info' message='Redundant `self` detected.' source='com.puppycrawl.tools.checkstyle.Style/RedundantSelf'/>
+    <error line='22' column='20' severity='info' message='Redundant `self` detected.' source='com.puppycrawl.tools.checkstyle.Style/RedundantSelf'/>
+  </file>
+  <file name='app/models/lesson_word.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='8' column='21' severity='info' message='Space missing to the left of {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceBeforeBlockBraces'/>
+    <error line='8' column='22' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='8' column='47' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+  </file>
+  <file name='app/models/word.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='10' column='0' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='13' column='20' severity='warning' message='Unused block argument - `user`. If it&apos;s necessary, use `_` or `_user` as an argument name to indicate that it won&apos;t be used. Also consider using a proc without arguments instead of a lambda if you want it to accept any arguments but don&apos;t care about them.' source='com.puppycrawl.tools.checkstyle.Lint/UnusedBlockArgument'/>
+    <error line='13' column='24' severity='info' message='Space missing to the left of {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceBeforeBlockBraces'/>
+    <error line='14' column='22' severity='info' message='Use the `lambda` method for multi-line lambdas.' source='com.puppycrawl.tools.checkstyle.Style/Lambda'/>
+    <error line='14' column='29' severity='info' message='Block body expression is on the same line as the block start.' source='com.puppycrawl.tools.checkstyle.Style/MultilineBlockLayout'/>
+    <error line='14' column='75' severity='info' message='Space inside { missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='14' column='80' severity='info' message='Line is too long. [99/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='14' column='92' severity='info' message='Space inside } missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='15' column='59' severity='info' message='Use 2 (not 57) spaces for indenting an expression spanning multiple lines.' source='com.puppycrawl.tools.checkstyle.Style/MultilineOperationIndentation'/>
+    <error line='15' column='80' severity='info' message='Line is too long. [102/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='15' column='84' severity='info' message='Space inside { missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='15' column='99' severity='info' message='Space inside } missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='15' column='101' severity='info' message='Expression at 15, 102 should be on its own line.' source='com.puppycrawl.tools.checkstyle.Style/BlockEndNewline'/>
+    <error line='16' column='26' severity='info' message='Use the `lambda` method for multi-line lambdas.' source='com.puppycrawl.tools.checkstyle.Style/Lambda'/>
+    <error line='16' column='33' severity='info' message='Block body expression is on the same line as the block start.' source='com.puppycrawl.tools.checkstyle.Style/MultilineBlockLayout'/>
+    <error line='16' column='79' severity='info' message='Space inside { missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='16' column='80' severity='info' message='Line is too long. [103/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='16' column='96' severity='info' message='Space inside } missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='17' column='63' severity='info' message='Use 2 (not 61) spaces for indenting an expression spanning multiple lines.' source='com.puppycrawl.tools.checkstyle.Style/MultilineOperationIndentation'/>
+    <error line='17' column='80' severity='info' message='Line is too long. [101/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='17' column='82' severity='info' message='Space missing after colon.' source='com.puppycrawl.tools.checkstyle.Style/SpaceAfterColon'/>
+    <error line='17' column='83' severity='info' message='Space inside { missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='17' column='98' severity='info' message='Space inside } missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='17' column='100' severity='info' message='Expression at 17, 101 should be on its own line.' source='com.puppycrawl.tools.checkstyle.Style/BlockEndNewline'/>
+    <error line='19' column='11' severity='info' message='Use `%w` or `%W` for array of words.' source='com.puppycrawl.tools.checkstyle.Style/WordArray'/>
+    <error line='19' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='19' column='19' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='19' column='30' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='app/models/user.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='2' column='37' severity='info' message='Space inside { missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='2' column='46' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='2' column='65' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='2' column='75' severity='info' message='Space inside } missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='2' column='80' severity='info' message='Line is too long. [126/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='2' column='91' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='3' column='59' severity='info' message='Use `%r` around regular expression.' source='com.puppycrawl.tools.checkstyle.Style/RegexpLiteral'/>
+  </file>
+  <file name='app/models/follow.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+  </file>
+  <file name='app/models/category.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='7' column='0' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+  </file>
+  <file name='app/models/answer.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='7' column='0' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='8' column='20' severity='info' message='Space missing to the left of {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceBeforeBlockBraces'/>
+    <error line='8' column='21' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='8' column='40' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+  </file>
+  <file name='app/controllers/static_pages_controller.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='2' column='0' severity='info' message='Extra empty line detected at class body beginning.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundClassBody'/>
+    <error line='11' column='0' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='12' column='3' severity='info' message='Final newline missing.' source='com.puppycrawl.tools.checkstyle.Style/TrailingBlankLines'/>
+  </file>
+  <file name='app/controllers/admin/words_controller.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='1' column='6' severity='info' message='Use nested module/class definitions instead of compact style.' source='com.puppycrawl.tools.checkstyle.Style/ClassAndModuleChildren'/>
+    <error line='46' column='2' severity='info' message='Keep a blank line before and after `private`.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundAccessModifier'/>
+    <error line='48' column='80' severity='info' message='Line is too long. [113/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='52' column='4' severity='info' message='Avoid using `rescue` in its modifier form.' source='com.puppycrawl.tools.checkstyle.Style/RescueModifier'/>
+  </file>
+  <file name='app/controllers/admin/categories_controller.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='1' column='6' severity='info' message='Use nested module/class definitions instead of compact style.' source='com.puppycrawl.tools.checkstyle.Style/ClassAndModuleChildren'/>
+    <error line='40' column='2' severity='info' message='Keep a blank line before and after `private`.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundAccessModifier'/>
+    <error line='46' column='4' severity='info' message='Avoid using `rescue` in its modifier form.' source='com.puppycrawl.tools.checkstyle.Style/RescueModifier'/>
+  </file>
+  <file name='app/controllers/admin/dashbroad_controller.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='1' column='6' severity='info' message='Use nested module/class definitions instead of compact style.' source='com.puppycrawl.tools.checkstyle.Style/ClassAndModuleChildren'/>
+  </file>
+  <file name='app/controllers/application_controller.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+  </file>
+  <file name='app/controllers/users_controller.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='9' column='4' severity='info' message='Use 2 (not 1) spaces for indentation.' source='com.puppycrawl.tools.checkstyle.Style/IndentationWidth'/>
+    <error line='9' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='9' column='22' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='10' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='12' column='4' severity='info' message='Use 2 (not 1) spaces for indentation.' source='com.puppycrawl.tools.checkstyle.Style/IndentationWidth'/>
+    <error line='12' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='12' column='22' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='13' column='4' severity='info' message='Tab detected.' source='com.puppycrawl.tools.checkstyle.Style/Tab'/>
+    <error line='17' column='2' severity='info' message='Keep a blank line before and after `private`.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundAccessModifier'/>
+  </file>
+  <file name='app/controllers/lessons_controller.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='5' column='4' severity='info' message='Avoid using `rescue` in its modifier form.' source='com.puppycrawl.tools.checkstyle.Style/RescueModifier'/>
+    <error line='9' column='4' severity='info' message='Avoid using `rescue` in its modifier form.' source='com.puppycrawl.tools.checkstyle.Style/RescueModifier'/>
+    <error line='12' column='23' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='19' column='2' severity='info' message='Assignment Branch Condition size for update is too high. [15.33/15]' source='com.puppycrawl.tools.checkstyle.Metrics/AbcSize'/>
+    <error line='20' column='4' severity='info' message='Avoid using `rescue` in its modifier form.' source='com.puppycrawl.tools.checkstyle.Style/RescueModifier'/>
+    <error line='22' column='25' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='25' column='24' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='31' column='4' severity='info' message='Avoid using `rescue` in its modifier form.' source='com.puppycrawl.tools.checkstyle.Style/RescueModifier'/>
+    <error line='32' column='20' severity='info' message='Avoid using `rescue` in its modifier form.' source='com.puppycrawl.tools.checkstyle.Style/RescueModifier'/>
+    <error line='32' column='60' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='35' column='2' severity='info' message='Keep a blank line before and after `private`.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundAccessModifier'/>
+    <error line='37' column='80' severity='info' message='Line is too long. [91/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='app/controllers/words_controller.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='5' column='6' severity='info' message='Avoid using `rescue` in its modifier form.' source='com.puppycrawl.tools.checkstyle.Style/RescueModifier'/>
+  </file>
+  <file name='app/controllers/categories_controller.rb'>
+    <error line='1' column='0' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+  </file>
+  <file name='spec/factories/answers.rb'/>
+  <file name='spec/factories/lessons.rb'>
+    <error line='5' column='0' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='6' column='39' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='9' column='9' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+  </file>
+  <file name='spec/factories/lesson_words.rb'/>
+  <file name='spec/factories/words.rb'/>
+  <file name='spec/factories/users.rb'>
+    <error line='3' column='10' severity='info' message='Unnecessary spacing detected.' source='com.puppycrawl.tools.checkstyle.Style/ExtraSpacing'/>
+    <error line='5' column='11' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='5' column='37' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+  </file>
+  <file name='spec/factories/categories.rb'>
+    <error line='3' column='10' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='0' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+  </file>
+  <file name='spec/models/category_spec.rb'>
+    <error line='4' column='10' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='25' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='5' column='21' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='5' column='48' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='6' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='6' column='27' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='10' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='10' column='26' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='13' column='7' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+  </file>
+  <file name='spec/models/user_spec.rb'>
+    <error line='4' column='14' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='4' column='37' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='6' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='10' column='10' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='16' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='16' column='38' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='17' column='19' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='20' column='25' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='24' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='25' column='19' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='29' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='30' column='19' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='32' column='32' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='35' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='35' column='25' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='36' column='9' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='spec/models/lesson_spec.rb'>
+    <error line='4' column='10' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='26' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='5' column='19' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='5' column='44' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='7' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='7' column='27' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='11' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='29' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='15' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='15' column='25' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+  </file>
+  <file name='spec/models/lesson_word_spec.rb'>
+    <error line='4' column='22' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='4' column='52' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='5' column='10' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='6' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='6' column='27' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='10' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='15' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='20' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='spec/models/word_spec.rb'>
+    <error line='4' column='10' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='5' column='2' severity='info' message='Use 2 (not 1) spaces for indentation.' source='com.puppycrawl.tools.checkstyle.Style/IndentationWidth'/>
+    <error line='5' column='16' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='5' column='39' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='6' column='0' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='7' column='4' severity='info' message='Inconsistent indentation detected.' source='com.puppycrawl.tools.checkstyle.Style/IndentationConsistency'/>
+    <error line='7' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='7' column='27' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='11' column='4' severity='info' message='Inconsistent indentation detected.' source='com.puppycrawl.tools.checkstyle.Style/IndentationConsistency'/>
+    <error line='11' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='28' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='12' column='24' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='16' column='4' severity='info' message='Inconsistent indentation detected.' source='com.puppycrawl.tools.checkstyle.Style/IndentationConsistency'/>
+    <error line='16' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='16' column='39' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+  </file>
+  <file name='spec/models/answer_spec.rb'>
+    <error line='4' column='17' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='4' column='42' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='5' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='5' column='25' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='9' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='spec/rails_helper.rb'>
+    <error line='5' column='6' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='5' column='80' severity='info' message='Line is too long. [86/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='32' column='0' severity='info' message='Inconsistent indentation detected.' source='com.puppycrawl.tools.checkstyle.Style/IndentationConsistency'/>
+    <error line='32' column='36' severity='info' message='Use the new Ruby 1.9 hash syntax.' source='com.puppycrawl.tools.checkstyle.Style/HashSyntax'/>
+  </file>
+  <file name='spec/views/lessons/edit.html.erb_spec.rb'>
+    <error line='3' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='8' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='10' column='66' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='62' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='14' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='14' column='38' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+  </file>
+  <file name='spec/views/lessons/show.html.erb_spec.rb'>
+    <error line='3' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='9' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='66' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='12' column='62' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='15' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='15' column='38' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+  </file>
+  <file name='spec/views/admin/categories/edit.html.erb_spec.rb'>
+    <error line='3' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='8' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='10' column='66' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='10' column='80' severity='info' message='Line is too long. [84/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='11' column='62' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='14' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='14' column='38' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+  </file>
+  <file name='spec/views/admin/categories/index.html.erb_spec.rb'>
+    <error line='3' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='17' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='9' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='66' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='80' severity='info' message='Line is too long. [84/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='12' column='62' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='15' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='17' column='32' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='spec/views/admin/categories/_modal.html.erb_spec.rb'>
+    <error line='3' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='17' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='8' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='12' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='14' column='32' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='spec/views/admin/categories/show.html.erb_spec.rb'>
+    <error line='3' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='17' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='8' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='10' column='66' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='10' column='80' severity='info' message='Line is too long. [84/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='11' column='62' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='14' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='14' column='38' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+  </file>
+  <file name='spec/views/admin/categories/_category.html.erb_spec.rb'>
+    <error line='3' column='15' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='17' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='8' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='12' column='5' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='13' column='11' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='spec/controllers/admin/categories_controller_spec.rb'>
+    <error line='4' column='19' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='4' column='47' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='6' column='11' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='7' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='9' column='42' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='13' column='11' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='14' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='16' column='42' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='20' column='11' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='21' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='23' column='42' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='27' column='11' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='28' column='19' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='28' column='19' severity='info' message='Space inside { missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='28' column='30' severity='info' message='Space inside { missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='28' column='55' severity='info' message='Space inside } missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='28' column='56' severity='info' message='Space inside } missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='28' column='57' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='29' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='34' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='41' column='11' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='42' column='19' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='42' column='19' severity='info' message='Space inside { missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='42' column='30' severity='info' message='Space inside { missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='42' column='55' severity='info' message='Space inside } missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='42' column='73' severity='info' message='Space inside } missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='42' column='74' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='44' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='49' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='49' column='39' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='50' column='23' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='56' column='11' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='57' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='62' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='63' column='27' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='64' column='35' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='spec/controllers/users_controller_spec.rb'>
+    <error line='11' column='11' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='29' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='12' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='12' column='65' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='19' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='23' column='21' severity='info' message='Redundant curly braces around a hash parameter.' source='com.puppycrawl.tools.checkstyle.Style/BracesAroundHashParameters'/>
+    <error line='23' column='21' severity='info' message='Space inside { missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+    <error line='23' column='34' severity='info' message='Space inside } missing.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideHashLiteralBraces'/>
+  </file>
+  <file name='spec/controllers/lessons_controller_spec.rb'>
+    <error line='49' column='67' severity='error' message='unexpected token tCOLON' source='com.puppycrawl.tools.checkstyle.Syntax'/>
+    <error line='49' column='136' severity='error' message='unexpected token tRPAREN' source='com.puppycrawl.tools.checkstyle.Syntax'/>
+    <error line='65' column='0' severity='error' message='unexpected token $end' source='com.puppycrawl.tools.checkstyle.Syntax'/>
+  </file>
+  <file name='spec/controllers/categories_controller_spec.rb'>
+    <error line='4' column='19' severity='info' message='Space missing inside {.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='4' column='46' severity='info' message='Space missing inside }.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBlockBraces'/>
+    <error line='5' column='0' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='6' column='11' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='6' column='26' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='7' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='7' column='44' severity='info' message='Trailing whitespace detected.' source='com.puppycrawl.tools.checkstyle.Style/TrailingWhitespace'/>
+    <error line='9' column='42' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='spec/spec_helper.rb'>
+    <error line='1' column='80' severity='info' message='Line is too long. [92/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='48' column='0' severity='info' message='Do not use block comments.' source='com.puppycrawl.tools.checkstyle.Style/BlockComments'/>
+  </file>
+  <file name='bin/rake'>
+    <error line='3' column='24' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='0' severity='warning' message='Do not suppress exceptions.' source='com.puppycrawl.tools.checkstyle.Lint/HandleExceptions'/>
+  </file>
+  <file name='bin/spring'>
+    <error line='7' column='10' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='8' column='10' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='10' column='11' severity='warning' message='Assignment in condition - you probably meant to use `==`.' source='com.puppycrawl.tools.checkstyle.Lint/AssignmentInCondition'/>
+    <error line='10' column='80' severity='info' message='Line is too long. [95/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='11' column='18' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='12' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='13' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='bin/setup'>
+    <error line='5' column='50' severity='info' message='Unnecessary spacing detected.' source='com.puppycrawl.tools.checkstyle.Style/ExtraSpacing'/>
+    <error line='11' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='12' column='9' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='13' column='9' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='21' column='9' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='24' column='9' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='25' column='9' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='28' column='9' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='bin/bundle'/>
+  <file name='bin/rails'>
+    <error line='3' column='24' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='0' severity='warning' message='Do not suppress exceptions.' source='com.puppycrawl.tools.checkstyle.Lint/HandleExceptions'/>
+  </file>
+  <file name='features/step_definitions/categories_step.rb'>
+    <error line='6' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='9' column='37' severity='warning' message='Unused block argument - `button`. You can omit the argument if you don&apos;t care about it.' source='com.puppycrawl.tools.checkstyle.Lint/UnusedBlockArgument'/>
+    <error line='14' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='18' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='21' column='40' severity='warning' message='Unused block argument - `arg1`. You can omit the argument if you don&apos;t care about it.' source='com.puppycrawl.tools.checkstyle.Lint/UnusedBlockArgument'/>
+  </file>
+  <file name='config/application.rb'>
+    <error line='3' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='5' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='6' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='7' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='8' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='9' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='10' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='11' column='8' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='19' column='2' severity='info' message='Missing top-level class documentation comment.' source='com.puppycrawl.tools.checkstyle.Style/Documentation'/>
+    <error line='20' column='80' severity='info' message='Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='24' column='80' severity='info' message='Line is too long. [99/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='25' column='80' severity='info' message='Line is too long. [89/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='28' column='80' severity='info' message='Line is too long. [98/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='29' column='80' severity='info' message='Line is too long. [87/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/deploy/production.rb'>
+    <error line='14' column='11' severity='info' message='`%w`-literals should be delimited by `(` and `)`.' source='com.puppycrawl.tools.checkstyle.Style/PercentLiteralDelimiters'/>
+    <error line='15' column='11' severity='info' message='`%w`-literals should be delimited by `(` and `)`.' source='com.puppycrawl.tools.checkstyle.Style/PercentLiteralDelimiters'/>
+    <error line='16' column='11' severity='info' message='`%w`-literals should be delimited by `(` and `)`.' source='com.puppycrawl.tools.checkstyle.Style/PercentLiteralDelimiters'/>
+    <error line='23' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='24' column='80' severity='info' message='Line is too long. [88/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='27' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='28' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='38' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='41' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='42' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='51' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='52' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+  </file>
+  <file name='config/deploy/staging.rb'>
+    <error line='6' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='7' column='80' severity='info' message='Line is too long. [88/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='10' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='11' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='21' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='24' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='25' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='34' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+    <error line='35' column='0' severity='info' message='Extra blank line detected.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLines'/>
+  </file>
+  <file name='config/production.rb'/>
+  <file name='config/unicorn.rb'>
+    <error line='3' column='18' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='7' column='4' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='12' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='13' column='12' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='16' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='17' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='config/environments/test.rb'>
+    <error line='2' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/environments/development.rb'>
+    <error line='2' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='30' column='80' severity='info' message='Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/environments/production.rb'>
+    <error line='2' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='34' column='80' severity='info' message='Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='38' column='80' severity='info' message='Line is too long. [102/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='44' column='80' severity='info' message='Line is too long. [96/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='64' column='80' severity='info' message='Line is too long. [100/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/initializers/devise.rb'>
+    <error line='7' column='80' severity='info' message='Line is too long. [154/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='13' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='29' column='80' severity='info' message='Line is too long. [83/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='34' column='80' severity='info' message='Line is too long. [84/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='36' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='37' column='80' severity='info' message='Line is too long. [88/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='38' column='80' severity='info' message='Line is too long. [89/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='44' column='34' severity='info' message='Space inside square brackets detected.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBrackets'/>
+    <error line='44' column='41' severity='info' message='Space inside square brackets detected.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBrackets'/>
+    <error line='48' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='49' column='34' severity='info' message='Space inside square brackets detected.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBrackets'/>
+    <error line='49' column='41' severity='info' message='Space inside square brackets detected.' source='com.puppycrawl.tools.checkstyle.Style/SpaceInsideBrackets'/>
+    <error line='52' column='80' severity='info' message='Line is too long. [81/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='53' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='59' column='80' severity='info' message='Line is too long. [83/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='61' column='80' severity='info' message='Line is too long. [84/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='90' column='80' severity='info' message='Line is too long. [86/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='92' column='80' severity='info' message='Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='94' column='80' severity='info' message='Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='95' column='80' severity='info' message='Line is too long. [83/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='96' column='80' severity='info' message='Line is too long. [83/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='100' column='80' severity='info' message='Line is too long. [150/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='119' column='80' severity='info' message='Line is too long. [86/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='121' column='80' severity='info' message='Line is too long. [84/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='160' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='169' column='80' severity='info' message='Line is too long. [83/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='195' column='80' severity='info' message='Line is too long. [87/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='196' column='80' severity='info' message='Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='197' column='80' severity='info' message='Line is too long. [86/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='198' column='80' severity='info' message='Line is too long. [83/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='205' column='80' severity='info' message='Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='239' column='80' severity='info' message='Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='247' column='80' severity='info' message='Line is too long. [81/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/initializers/filter_parameter_logging.rb'/>
+  <file name='config/initializers/backtrace_silencers.rb'>
+    <error line='3' column='80' severity='info' message='Line is too long. [107/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='6' column='80' severity='info' message='Line is too long. [112/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/initializers/session_store.rb'/>
+  <file name='config/initializers/rails_config.rb'>
+    <error line='2' column='22' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='config/initializers/cookies_serializer.rb'/>
+  <file name='config/initializers/mime_types.rb'/>
+  <file name='config/initializers/assets.rb'>
+    <error line='10' column='80' severity='info' message='Line is too long. [93/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/initializers/wrap_parameters.rb'>
+    <error line='6' column='80' severity='info' message='Line is too long. [96/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/initializers/inflections.rb'/>
+  <file name='config/boot.rb'/>
+  <file name='config/routes.rb'>
+    <error line='2' column='7' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='3' column='6' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='3' column='18' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='6' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='4' column='19' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+  </file>
+  <file name='config/environment.rb'/>
+  <file name='config/deploy.rb'>
+    <error line='7' column='19' severity='info' message='`%w`-literals should be delimited by `(` and `)`.' source='com.puppycrawl.tools.checkstyle.Style/PercentLiteralDelimiters'/>
+    <error line='8' column='18' severity='info' message='`%w`-literals should be delimited by `(` and `)`.' source='com.puppycrawl.tools.checkstyle.Style/PercentLiteralDelimiters'/>
+    <error line='10' column='26' severity='info' message='Prefer single-quoted strings when you don&apos;t need string interpolation or special symbols.' source='com.puppycrawl.tools.checkstyle.Style/StringLiterals'/>
+    <error line='14' column='80' severity='info' message='Line is too long. [126/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='15' column='21' severity='info' message='`%w`-literals should be delimited by `(` and `)`.' source='com.puppycrawl.tools.checkstyle.Style/PercentLiteralDelimiters'/>
+    <error line='19' column='0' severity='info' message='Extra empty line detected at block body beginning.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+    <error line='37' column='0' severity='info' message='Extra empty line detected at block body end.' source='com.puppycrawl.tools.checkstyle.Style/EmptyLinesAroundBlockBody'/>
+  </file>
+</checkstyle>
