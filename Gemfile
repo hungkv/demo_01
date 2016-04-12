@@ -46,6 +46,8 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn', require: false
   gem 'capistrano-bundler'
+  gem 'rubocop'
+  gem 'rubocop-checkstyle_formatter', require: false
 end
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console

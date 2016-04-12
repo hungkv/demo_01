@@ -86,7 +86,19 @@
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     }
-    #offenses .offense-box .box-title h3 {
+    .fixed .box-title {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    }
+    .box-title-placeholder {
+    display: none;
+    }
+    .fixed .box-title-placeholder {
+    display: block;
+    }
+    #offenses .offense-box .box-title h3, #offenses .offense-box .box-title-placeholder h3 {
     color: #33353f;
     background-color: #f6f6f6;
     font-size: 2rem;
@@ -181,7 +193,51 @@
     color: #777;
     text-align: right;
     }
+    .extra-code {
+      color: #ED9C28
+    }
     </style>
+
+    <script>
+    (function() {
+      // floating headers. requires classList support.
+      if (!('classList' in document.createElement("_"))) return;
+
+      var loaded = false,
+        boxes,
+        boxPositions;
+
+      window.onload = function() {
+        var scrollY = window.scrollY;
+        boxes = document.querySelectorAll('.offense-box');
+        boxPositions = [];
+        for (var i = 0; i < boxes.length; i++)
+          // need to add scrollY because the page might be somewhere other than the top when loaded.
+          boxPositions[i] = boxes[i].getBoundingClientRect().top + scrollY;
+        loaded = true;
+      };
+
+      window.onscroll = function() {
+        if (!loaded) return;
+        var i,
+          idx,
+          scrollY = window.scrollY;
+        for (i = 0; i < boxPositions.length; i++) {
+          if (scrollY <= boxPositions[i]) {
+            idx = i;
+            break;
+          }
+        }
+        if (typeof idx == 'undefined') idx = boxes.length;
+        if (idx > 0)
+          boxes[idx - 1].classList.add('fixed');
+        for (i = 0; i < boxes.length; i++) {
+          if (i < idx) continue;
+          boxes[i].classList.remove('fixed');
+        }
+      };
+    })();
+    </script>
   </head>
   <body>
     <div id="header">
@@ -311,13 +367,14 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
     <div class="information">
       <div class="infobox">
         87 files inspected,
-        617 offenses detected
+        592 offenses detected
       </div>
     </div>
     <div id="offenses">
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>Capfile - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -338,7 +395,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
-        <div class="box-title"><h3>Gemfile - 36 offenses</h3></div>
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>Gemfile - 37 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -605,6 +663,17 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
+              <span class="location">Line #31</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
+            </div>
+            
+            <pre><code>gem <span class="highlight convention">&quot;ci_reporter&quot;</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
               <span class="location">Line #32</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
@@ -741,6 +810,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>Rakefile - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -761,7 +831,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
-        <div class="box-title"><h3>app/controllers/admin/categories_controller.rb - 4 offenses</h3></div>
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>app/controllers/admin/categories_controller.rb - 9 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -777,12 +848,67 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #1</span> –
+              <span class="location">Line #13</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Use nested module/class definitions instead of compact style.</span>
+              <span class="message">Move <code>redirect_to admin_categories_path</code> out of the conditional.</span>
             </div>
             
-            <pre><code>class <span class="highlight convention">Admin::CategoriesController</span> &lt; ApplicationController</code></pre>
+            <pre><code>      <span class="highlight convention">redirect_to admin_categories_path</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #16</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Move <code>redirect_to admin_categories_path</code> out of the conditional.</span>
+            </div>
+            
+            <pre><code>      <span class="highlight convention">redirect_to admin_categories_path</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #23</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Move <code>redirect_to admin_categories_path</code> out of the conditional.</span>
+            </div>
+            
+            <pre><code>      <span class="highlight convention">redirect_to admin_categories_path</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #26</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Move <code>redirect_to admin_categories_path</code> out of the conditional.</span>
+            </div>
+            
+            <pre><code>      <span class="highlight convention">redirect_to admin_categories_path</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #33</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Move <code>redirect_to admin_categories_path</code> out of the conditional.</span>
+            </div>
+            
+            <pre><code>      <span class="highlight convention">redirect_to admin_categories_path</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #36</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Move <code>redirect_to admin_categories_path</code> out of the conditional.</span>
+            </div>
+            
+            <pre><code>      <span class="highlight convention">redirect_to admin_categories_path</span></code></pre>
             
           </div>
           
@@ -814,7 +940,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
-        <div class="box-title"><h3>app/controllers/admin/dashbroad_controller.rb - 2 offenses</h3></div>
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>app/controllers/admin/dashbroad_controller.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -828,24 +955,14 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             
           </div>
           
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #1</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Use nested module/class definitions instead of compact style.</span>
-            </div>
-            
-            <pre><code>class <span class="highlight convention">Admin::DashbroadController</span> &lt; ApplicationController</code></pre>
-            
-          </div>
-          
         </div>
       </div>
       
       
       
       <div class="offense-box">
-        <div class="box-title"><h3>app/controllers/admin/words_controller.rb - 5 offenses</h3></div>
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>app/controllers/admin/words_controller.rb - 4 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -856,17 +973,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code><span class="highlight convention">class</span> Admin::WordsController &lt; ApplicationController</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #1</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Use nested module/class definitions instead of compact style.</span>
-            </div>
-            
-            <pre><code>class <span class="highlight convention">Admin::WordsController</span> &lt; ApplicationController</code></pre>
             
           </div>
           
@@ -909,6 +1015,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/controllers/application_controller.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -929,6 +1036,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/controllers/categories_controller.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -949,7 +1057,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
-        <div class="box-title"><h3>app/controllers/lessons_controller.rb - 13 offenses</h3></div>
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>app/controllers/lessons_controller.rb - 12 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -993,17 +1102,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>      flash[:notice] = <span class="highlight convention">&quot;Lesson create successfully&quot;</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #19</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Assignment Branch Condition size for update is too high. [15.33/15]</span>
-            </div>
-            
-            <pre><code>  <span class="highlight convention">def</span> update</code></pre>
             
           </div>
           
@@ -1101,6 +1199,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/controllers/static_pages_controller.rb - 4 offenses</h3></div>
         <div class="offense-reports">
           
@@ -1150,6 +1249,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/controllers/users_controller.rb - 10 offenses</h3></div>
         <div class="offense-reports">
           
@@ -1269,6 +1369,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/controllers/words_controller.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
@@ -1300,6 +1401,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/helpers/application_helper.rb - 9 offenses</h3></div>
         <div class="offense-reports">
           
@@ -1408,6 +1510,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/models/answer.rb - 5 offenses</h3></div>
         <div class="offense-reports">
           
@@ -1470,6 +1573,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/models/category.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
@@ -1499,6 +1603,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/models/follow.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -1519,6 +1624,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/models/lesson.rb - 12 offenses</h3></div>
         <div class="offense-reports">
           
@@ -1658,6 +1764,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/models/lesson_word.rb - 4 offenses</h3></div>
         <div class="offense-reports">
           
@@ -1711,6 +1818,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>app/models/user.rb - 8 offenses</h3></div>
         <div class="offense-reports">
           
@@ -1808,7 +1916,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
-        <div class="box-title"><h3>app/models/word.rb - 29 offenses</h3></div>
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>app/models/word.rb - 30 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -1834,11 +1943,11 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           <div class="report">
             <div class="meta">
               <span class="location">Line #13</span> –
-              <span class="severity warning">warning:</span>
-              <span class="message">Unused block argument - <code>user</code>. If it's necessary, use <code>_</code> or <code>_user</code> as an argument name to indicate that it won't be used. Also consider using a proc without arguments instead of a lambda if you want it to accept any arguments but don't care about them.</span>
+              <span class="severity convention">convention:</span>
+              <span class="message">Wrap stabby lambda arguments with parentheses.</span>
             </div>
             
-            <pre><code>  scope :get_all, -&gt;<span class="highlight warning">user</span>{}</code></pre>
+            <pre><code>  scope :get_all, -&gt;<span class="highlight convention">user</span>{}</code></pre>
             
           </div>
           
@@ -1868,10 +1977,21 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #14</span> –
               <span class="severity convention">convention:</span>
+              <span class="message">Wrap stabby lambda arguments with parentheses.</span>
+            </div>
+            
+            <pre><code>  scope :get_learned, -&gt;<span class="highlight convention">user</span>{joins(:lesson_words, :lessons).where(lessons: {user_id: user.id}).uniq</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #14</span> –
+              <span class="severity convention">convention:</span>
               <span class="message">Block body expression is on the same line as the block start.</span>
             </div>
             
-            <pre><code>  scope :get_learned, -&gt;user{<span class="highlight convention">joins(:lesson_words, :lessons).where(lessons: {user_id: user.id}).uniq</span></code></pre>
+            <pre><code>  scope :get_learned, -&gt;user{<span class="highlight convention">joins(:lesson_words, :lessons).where(lessons: {user_id: user.id}).uniq</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
@@ -1905,17 +2025,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>  scope :get_learned, -&gt;user{joins(:lesson_words, :lessons).where(lessons: {user_id: user.id<span class="highlight convention">}</span>).uniq</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #15</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Use 2 (not 57) spaces for indenting an expression spanning multiple lines.</span>
-            </div>
-            
-            <pre><code>                                                           <span class="highlight convention">.where</span>.not(lesson_words: {answer_id: nil})}</code></pre>
             
           </div>
           
@@ -1978,10 +2087,21 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #16</span> –
               <span class="severity convention">convention:</span>
+              <span class="message">Wrap stabby lambda arguments with parentheses.</span>
+            </div>
+            
+            <pre><code>  scope :get_not_learned, -&gt;<span class="highlight convention">user</span>{joins(:lesson_words, :lessons).where(lessons: {user_id: user.id}).uniq</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #16</span> –
+              <span class="severity convention">convention:</span>
               <span class="message">Block body expression is on the same line as the block start.</span>
             </div>
             
-            <pre><code>  scope :get_not_learned, -&gt;user{<span class="highlight convention">joins(:lesson_words, :lessons).where(lessons: {user_id: user.id}).uniq</span></code></pre>
+            <pre><code>  scope :get_not_learned, -&gt;user{<span class="highlight convention">joins(:lesson_words, :lessons).where(lessons: {user_id: user.id}).uniq</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
@@ -2015,17 +2135,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>  scope :get_not_learned, -&gt;user{joins(:lesson_words, :lessons).where(lessons: {user_id: user.id<span class="highlight convention">}</span>).uniq</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #17</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Use 2 (not 61) spaces for indenting an expression spanning multiple lines.</span>
-            </div>
-            
-            <pre><code>                                                               <span class="highlight convention">.where</span>(lesson_words:{answer_id: nil})}</code></pre>
             
           </div>
           
@@ -2088,7 +2197,18 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #19</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Use <code>%w</code> or <code>%W</code> for array of words.</span>
+              <span class="message">Freeze mutable objects assigned to constants.</span>
+            </div>
+            
+            <pre><code>  STATUS = <span class="highlight convention">[&quot;all&quot;, &quot;learned&quot;, &quot;not_learned&quot;]</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #19</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Use <code>%w</code> or <code>%W</code> for an array of words.</span>
             </div>
             
             <pre><code>  STATUS = <span class="highlight convention">[&quot;all&quot;, &quot;learned&quot;, &quot;not_learned&quot;]</span></code></pre>
@@ -2136,6 +2256,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>bin/rails - 2 offenses</h3></div>
         <div class="offense-reports">
           
@@ -2167,6 +2288,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>bin/rake - 2 offenses</h3></div>
         <div class="offense-reports">
           
@@ -2198,6 +2320,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>bin/setup - 8 offenses</h3></div>
         <div class="offense-reports">
           
@@ -2295,6 +2418,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>bin/spring - 7 offenses</h3></div>
         <div class="offense-reports">
           
@@ -2383,6 +2507,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/application.rb - 14 offenses</h3></div>
         <div class="offense-reports">
           
@@ -2548,6 +2673,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/deploy.rb - 7 offenses</h3></div>
         <div class="offense-reports">
           
@@ -2630,6 +2756,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/deploy/production.rb - 12 offenses</h3></div>
         <div class="offense-reports">
           
@@ -2759,6 +2886,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/deploy/staging.rb - 9 offenses</h3></div>
         <div class="offense-reports">
           
@@ -2857,6 +2985,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/environments/development.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
@@ -2888,6 +3017,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/environments/production.rb - 5 offenses</h3></div>
         <div class="offense-reports">
           
@@ -2952,6 +3082,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/environments/test.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -2972,6 +3103,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/initializers/assets.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -2992,6 +3124,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/initializers/backtrace_silencers.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
@@ -3025,6 +3158,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/initializers/devise.rb - 33 offenses</h3></div>
         <div class="offense-reports">
           
@@ -3403,6 +3537,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/initializers/rails_config.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -3425,6 +3560,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/initializers/wrap_parameters.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -3447,6 +3583,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/routes.rb - 5 offenses</h3></div>
         <div class="offense-reports">
           
@@ -3511,6 +3648,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>config/unicorn.rb - 6 offenses</h3></div>
         <div class="offense-reports">
           
@@ -3586,6 +3724,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/migrate/20150617030739_create_categories.rb - 7 offenses</h3></div>
         <div class="offense-reports">
           
@@ -3670,6 +3809,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/migrate/20150617031036_create_words.rb - 6 offenses</h3></div>
         <div class="offense-reports">
           
@@ -3743,6 +3883,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/migrate/20150617031225_create_answers.rb - 6 offenses</h3></div>
         <div class="offense-reports">
           
@@ -3816,6 +3957,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/migrate/20150617031349_create_lessons.rb - 6 offenses</h3></div>
         <div class="offense-reports">
           
@@ -3889,6 +4031,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/migrate/20150617031506_create_lesson_words.rb - 8 offenses</h3></div>
         <div class="offense-reports">
           
@@ -3984,6 +4127,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/migrate/20150617031722_create_users.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
@@ -4013,6 +4157,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/migrate/20150617060217_create_follows.rb - 6 offenses</h3></div>
         <div class="offense-reports">
           
@@ -4086,7 +4231,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
-        <div class="box-title"><h3>db/migrate/20150617065155_add_devise_to_users.rb - 13 offenses</h3></div>
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>db/migrate/20150617065155_add_devise_to_users.rb - 8 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -4107,7 +4253,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="message">Method has too many lines. [14/10]</span>
             </div>
             
-            <pre><code>  <span class="highlight convention">def</span> self.up</code></pre>
+            <pre><code>  <span class="highlight convention">def self.up</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
@@ -4130,50 +4276,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>      t.string :encrypted_password, null: false, default: <span class="highlight convention">&quot;&quot;</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #9</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>      t.string<span class="highlight convention">   </span>:reset_password_token</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #16</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>      t.integer<span class="highlight convention">  </span>:sign_in_count, default: 0, null: false</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #19</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>      t.string<span class="highlight convention">   </span>:current_sign_in_ip</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #20</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>      t.string<span class="highlight convention">   </span>:last_sign_in_ip</code></pre>
             
           </div>
           
@@ -4219,23 +4321,13 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             
           </div>
           
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #47</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Use <code>fail</code> instead of <code>raise</code> to signal exceptions.</span>
-            </div>
-            
-            <pre><code>    <span class="highlight convention">raise</span> ActiveRecord::IrreversibleMigration</code></pre>
-            
-          </div>
-          
         </div>
       </div>
       
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/migrate/20150618010050_add_avatar_to_user.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -4256,6 +4348,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/migrate/20150618011136_add_name_to_user.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -4276,6 +4369,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/migrate/20150622044216_add_colunm_content_to_answers.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
@@ -4296,7 +4390,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
-        <div class="box-title"><h3>db/schema.rb - 106 offenses</h3></div>
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>db/schema.rb - 81 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -4367,17 +4462,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #17</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;word_id&quot;,    null: false</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #17</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
@@ -4393,17 +4477,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>    t.integer  &quot;word_id&quot;,<span class="highlight convention">   </span> null: false</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #18</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.boolean<span class="highlight convention">  </span>&quot;is_true&quot;</code></pre>
             
           </div>
           
@@ -4444,17 +4517,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #21</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;content&quot;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #21</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
@@ -4470,17 +4532,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>  create_table <span class="highlight convention">&quot;categories&quot;</span>, force: :cascade do |t|</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #25</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;title&quot;,       null: false</code></pre>
             
           </div>
           
@@ -4510,32 +4561,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #26</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;description&quot;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #26</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
             <pre><code>    t.string   <span class="highlight convention">&quot;description&quot;</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #27</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.text<span class="highlight convention">     </span>&quot;content&quot;</code></pre>
             
           </div>
           
@@ -4587,32 +4616,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #33</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;user_id&quot;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #33</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
             <pre><code>    t.integer  <span class="highlight convention">&quot;user_id&quot;</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #34</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;follower_id&quot;</code></pre>
             
           </div>
           
@@ -4664,17 +4671,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #40</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;lesson_id&quot;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #40</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
@@ -4686,32 +4682,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #41</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;word_id&quot;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #41</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
             <pre><code>    t.integer  <span class="highlight convention">&quot;word_id&quot;</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #42</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;answer_id&quot;</code></pre>
             
           </div>
           
@@ -4884,32 +4858,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #52</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;category_id&quot;, null: false</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #52</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
             <pre><code>    t.integer  <span class="highlight convention">&quot;category_id&quot;</span>, null: false</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #53</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;user_id&quot;,     null: false</code></pre>
             
           </div>
           
@@ -4983,17 +4935,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #61</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;email&quot;,                  default: &quot;&quot;, null: false</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #61</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
@@ -5016,17 +4957,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #62</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;encrypted_password&quot;,     default: &quot;&quot;, null: false</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #62</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
@@ -5042,17 +4972,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>    t.string   &quot;encrypted_password&quot;,     default: <span class="highlight convention">&quot;&quot;</span>, null: false</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #63</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;reset_password_token&quot;</code></pre>
             
           </div>
           
@@ -5086,17 +5005,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>    t.datetime <span class="highlight convention">&quot;remember_created_at&quot;</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #66</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;sign_in_count&quot;,          default: 0,  null: false</code></pre>
             
           </div>
           
@@ -5159,32 +5067,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #69</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;current_sign_in_ip&quot;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #69</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
             <pre><code>    t.string   <span class="highlight convention">&quot;current_sign_in_ip&quot;</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #70</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;last_sign_in_ip&quot;</code></pre>
             
           </div>
           
@@ -5203,17 +5089,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #71</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;avatar_file_name&quot;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #71</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
@@ -5225,32 +5100,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #72</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;avatar_content_type&quot;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #72</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
             <pre><code>    t.string   <span class="highlight convention">&quot;avatar_content_type&quot;</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #73</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;avatar_file_size&quot;</code></pre>
             
           </div>
           
@@ -5273,17 +5126,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>    t.datetime <span class="highlight convention">&quot;avatar_updated_at&quot;</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #75</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;name&quot;</code></pre>
             
           </div>
           
@@ -5390,32 +5232,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #82</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.integer<span class="highlight convention">  </span>&quot;category_id&quot;, null: false</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #82</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
             </div>
             
             <pre><code>    t.integer  <span class="highlight convention">&quot;category_id&quot;</span>, null: false</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #83</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Put one space between the method name and the first argument.</span>
-            </div>
-            
-            <pre><code>    t.string<span class="highlight convention">   </span>&quot;content&quot;,     null: false</code></pre>
             
           </div>
           
@@ -5467,6 +5287,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>db/seeds.rb - 3 offenses</h3></div>
         <div class="offense-reports">
           
@@ -5507,6 +5328,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>features/step_definitions/categories_step.rb - 5 offenses</h3></div>
         <div class="offense-reports">
           
@@ -5571,6 +5393,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/controllers/admin/categories_controller_spec.rb - 36 offenses</h3></div>
         <div class="offense-reports">
           
@@ -5976,6 +5799,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/controllers/categories_controller_spec.rb - 8 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6071,6 +5895,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/controllers/lessons_controller_spec.rb - 3 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6078,7 +5903,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #49</span> –
               <span class="severity error">error:</span>
-              <span class="message">unexpected token tCOLON</span>
+              <span class="message">unexpected token tCOLON
+(Using Ruby 2.0 parser; configure using <code>TargetRubyVersion</code> parameter, under <code>AllCops</code>)</span>
             </div>
             
             <pre><code>        params[:lesson][:lesson_words_attributes].merge!(&quot;#{index}&quot;<span class="highlight error">:</span> {answer_id: word_lesson.word.answers.random.id, id: word_lesson.id})</code></pre>
@@ -6089,7 +5915,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #49</span> –
               <span class="severity error">error:</span>
-              <span class="message">unexpected token tRPAREN</span>
+              <span class="message">unexpected token tRPAREN
+(Using Ruby 2.0 parser; configure using <code>TargetRubyVersion</code> parameter, under <code>AllCops</code>)</span>
             </div>
             
             <pre><code>        params[:lesson][:lesson_words_attributes].merge!(&quot;#{index}&quot;: {answer_id: word_lesson.word.answers.random.id, id: word_lesson.id}<span class="highlight error">)</span></code></pre>
@@ -6100,7 +5927,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #65</span> –
               <span class="severity error">error:</span>
-              <span class="message">unexpected token $end</span>
+              <span class="message">unexpected token $end
+(Using Ruby 2.0 parser; configure using <code>TargetRubyVersion</code> parameter, under <code>AllCops</code>)</span>
             </div>
             
           </div>
@@ -6111,6 +5939,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/controllers/users_controller_spec.rb - 8 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6210,6 +6039,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/factories/categories.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6241,6 +6071,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/factories/lessons.rb - 3 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6281,8 +6112,20 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
-        <div class="box-title"><h3>spec/factories/users.rb - 3 offenses</h3></div>
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>spec/factories/users.rb - 4 offenses</h3></div>
         <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #3</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Operator <code>=</code> should be surrounded by a single space.</span>
+            </div>
+            
+            <pre><code>    pass <span class="highlight convention">=</span>  Faker::Internet.password</code></pre>
+            
+          </div>
           
           <div class="report">
             <div class="meta">
@@ -6325,6 +6168,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/models/answer_spec.rb - 5 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6389,6 +6233,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/models/category_spec.rb - 9 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6497,6 +6342,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/models/lesson_spec.rb - 10 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6616,6 +6462,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/models/lesson_word_spec.rb - 8 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6713,6 +6560,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/models/user_spec.rb - 17 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6909,6 +6757,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/models/word_spec.rb - 15 offenses</h3></div>
         <div class="offense-reports">
           
@@ -6972,7 +6821,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="message">Inconsistent indentation detected.</span>
             </div>
             
-            <pre><code>    <span class="highlight convention">it &quot;should be valid&quot; do </span></code></pre>
+            <pre><code>    <span class="highlight convention">it &quot;should be valid&quot; do </span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
@@ -7005,7 +6854,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="message">Inconsistent indentation detected.</span>
             </div>
             
-            <pre><code>    <span class="highlight convention">it &quot;requires content&quot; do </span></code></pre>
+            <pre><code>    <span class="highlight convention">it &quot;requires content&quot; do </span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
@@ -7049,7 +6898,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="message">Inconsistent indentation detected.</span>
             </div>
             
-            <pre><code>    <span class="highlight convention">it &quot;requires associate category&quot; do </span></code></pre>
+            <pre><code>    <span class="highlight convention">it &quot;requires associate category&quot; do </span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
@@ -7081,6 +6930,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/rails_helper.rb - 4 offenses</h3></div>
         <div class="offense-reports">
           
@@ -7134,6 +6984,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/spec_helper.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
@@ -7155,7 +7006,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="message">Do not use block comments.</span>
             </div>
             
-            <pre><code><span class="highlight convention">=begin</span></code></pre>
+            <pre><code><span class="highlight convention">=begin</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
@@ -7165,6 +7016,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/views/admin/categories/_category.html.erb_spec.rb - 5 offenses</h3></div>
         <div class="offense-reports">
           
@@ -7229,6 +7081,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/views/admin/categories/_modal.html.erb_spec.rb - 5 offenses</h3></div>
         <div class="offense-reports">
           
@@ -7293,6 +7146,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/views/admin/categories/edit.html.erb_spec.rb - 7 offenses</h3></div>
         <div class="offense-reports">
           
@@ -7379,6 +7233,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/views/admin/categories/index.html.erb_spec.rb - 8 offenses</h3></div>
         <div class="offense-reports">
           
@@ -7476,6 +7331,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/views/admin/categories/show.html.erb_spec.rb - 8 offenses</h3></div>
         <div class="offense-reports">
           
@@ -7573,6 +7429,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/views/lessons/edit.html.erb_spec.rb - 6 offenses</h3></div>
         <div class="offense-reports">
           
@@ -7648,6 +7505,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
         <div class="box-title"><h3>spec/views/lessons/show.html.erb_spec.rb - 6 offenses</h3></div>
         <div class="offense-reports">
           
@@ -7724,7 +7582,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
     </div>
     <footer>
       Generated by <a href="https://github.com/bbatsov/rubocop">RuboCop</a>
-      <span class="version">0.34.2</span>
+      <span class="version">0.39.0</span>
     </footer>
   </body>
 </html>
