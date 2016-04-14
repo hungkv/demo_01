@@ -11,9 +11,9 @@ set :rails_env, 'production'
 # Supports bulk-adding hosts to roles, the primary
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
-role :app, %w{hungkv@192.168.2.226}
-role :web, %w{hungkv@192.168.2.226}
-role :db,  %w{hungkv@192.168.2.226}
+role :app, %w{hungkv@192.168.2.254}
+role :web, %w{hungkv@192.168.2.254}
+role :db,  %w{hungkv@192.168.2.254}
 
 # server-based syntax
 # ======================
